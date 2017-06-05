@@ -11,6 +11,8 @@ public class Main {
             Integer column = InputGetter.getIntegerInput();
             Integer row = InputGetter.getIntegerInput();
             game.updateGameState(column, row);
+            Cell cell = game.getBoard().getCell(1, 1);
+            System.out.println(cell.getContent());
             break;
         }
     }

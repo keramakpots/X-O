@@ -24,15 +24,15 @@ public class Game {
 
     public void initGame() {
         this.board = new Board();
+        this.board.init();
         this.currentPlayer = Game.getPlayer();
     }
 
     public void updateGameState(int column, int row) {
         Cell cell = this.board.getCell(row, column);
         Seed seed = this.getCurrentPlayer().getSeed();
-        System.out.println(seed);
         cell.setSeed(seed);
-        this.board.setCell(column, row, cell);
+        this.board.setCell(row, column, cell);
         this.currentPlayer.switchSeed();
     }
 

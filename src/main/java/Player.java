@@ -13,7 +13,7 @@ public class Player {
     }
 
     public void switchSeed() {
-        if(this.seed.equals(Seed.CROSS)) {
+        if(this.seed == Seed.CROSS) {
             this.seed = Seed.NOUGHT;
         } else {
             this.seed = Seed.CROSS;
