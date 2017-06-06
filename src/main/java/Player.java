@@ -13,10 +13,10 @@ public class Player {
     }
 
     public void switchSeed() {
-        if(this.seed == Seed.CROSS) {
-            this.seed = Seed.NOUGHT;
+        if(this.seed == Seed.X) {
+            this.seed = Seed.O;
         } else {
-            this.seed = Seed.CROSS;
+            this.seed = Seed.X;
         }
     }
     public Seed getSeed() {

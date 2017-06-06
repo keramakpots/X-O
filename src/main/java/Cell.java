@@ -7,7 +7,7 @@ public class Cell {
     public Cell(int row, int column) {
         this.column = column;
         this.row = row;
-        this.content = Seed.EMPTY;
+        this.content = Seed._;
     }
 
     public void setSeed(Seed seed) {

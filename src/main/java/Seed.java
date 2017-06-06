@@ -1,6 +1,6 @@
 
 public enum Seed {
-    EMPTY,
-    CROSS,
-    NOUGHT
+    _,
+    X,
+    O
 }

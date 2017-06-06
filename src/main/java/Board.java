@@ -67,4 +67,8 @@ public class Board {
             this.board.put(9, cell);
         }
     }
+    public Map<Integer, Cell> getBoard() {
+        return board;
+    }
+
 }
